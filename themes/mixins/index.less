@@ -13,17 +13,17 @@
   outline: none;
   transition: color @transition-time ease;
   &:hover {
-    color: darken(@link-color, 10%) !important;
+    color: darken(@link-color, 10%);
   }
   &:active {
-    color: darken(@link-color, 20%) !important;
+    color: darken(@link-color, 20%);
   }
   &:active, &:hover{
     outline: 0;
     text-decoration: none;
   }
   &[disabled] {
-    color: @disabled-color !important;
+    color: @disabled-color;
     cursor: default;
   }
 }
@@ -41,11 +41,11 @@
   &:hover {
     color: @link-color !important;
   }
-  
+
   &:active {
     color: darken(@link-color, 15%) !important;
   }
-  
+
   &.@{pop-ref-prefix} &{
     color: darken(@link-color, 10%) !important;
   }
