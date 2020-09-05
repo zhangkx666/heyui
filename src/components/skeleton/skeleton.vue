@@ -1,8 +1,8 @@
 <template>
   <div class="h-skeleton">
     <div class="h-skeleton-content" v-if="loading" :class="{'h-skeleton-active' : active}">
-      <h3 class="h-skeleton-title" :style="{'width': titleWidth}"></h3>
-      <ul class="h-skeleton-paragraph">
+      <h3 v-if="title" class="h-skeleton-title" :style="{'width': titleWidth}"></h3>
+      <ul v-if="paragraph" class="h-skeleton-paragraph">
         <li v-for="(item, index) in rows" :key="index"></li>
       </ul>
     </div>
