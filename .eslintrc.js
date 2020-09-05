@@ -27,7 +27,7 @@ module.exports = {
     "eqeqeq": "off",
     "linebreak-style": [
         "error",
-        "unix"
+        "windows"
     ],
     "no-useless-call": "off",
     "space-before-function-paren": ["error", { "anonymous": "always", "named": "never", "asyncArrow": "always" }]

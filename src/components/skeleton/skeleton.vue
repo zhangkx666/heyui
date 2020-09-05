@@ -2,7 +2,7 @@
   <div class="h-skeleton" :class="{'h-skeleton-active' : active}">
     <template v-if="loading">
       <div v-if="avatar" class="h-skeleton-avatar">
-        <span :class="'h-skeleton-avatar-' + avatarShape" :style="{width: avatarSize + 'px', height: avatarSize + 'px'}"></span>
+        <span :class="'h-skeleton-avatar-' + avatarShape" :style="{'width': avatarSize + 'px', 'height': avatarSize + 'px'}"></span>
       </div>
       <div v-if="title || paragraph" class="h-skeleton-content">
         <h3 v-if="title" class="h-skeleton-title" :style="{'width': titleWidth}"></h3>
